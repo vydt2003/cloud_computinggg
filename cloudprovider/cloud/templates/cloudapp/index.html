@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Cloud VPS Việt Nam</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="static/css/style.css">
+</head>
+<body>
+
+    <!-- Navbar -->
+    <nav class="navbar navbar-dark bg-dark">
+        <div class="container-fluid">
+            <a class="navbar-brand text-white" href="#">CLOUDING.VN</a>
+            <span class="text-white">Số dư: 0 ₫ | <a href="#" class="text-warning">Nạp tiền</a></span>
+        </div>
+    </nav>
+
+    <div class="d-flex">
+        <!-- Sidebar -->
+        <div class="sidebar bg-dark text-white p-3">
+            <ul class="nav flex-column">
+                <li class="nav-item"><a class="nav-link text-white" href="#">📌 Tạo mới VPS</a></li>
+                <li class="nav-item"><a class="nav-link text-white" href="#">📌 Quản lý VPS</a></li>
+                <li class="nav-item"><a class="nav-link text-white" href="#">📌 Quản lý GPU Server</a></li>
+                <li class="nav-item"><a class="nav-link text-white" href="#">📌 Tạo mới Proxy</a></li>
+                <li class="nav-item"><a class="nav-link text-white" href="#">📌 Quản lý Proxy</a></li>
+                <li class="nav-item"><a class="nav-link text-white" href="#">📌 Quản lý thanh toán</a></li>
+                <li class="nav-item"><a class="nav-link text-white" href="#">📌 Affiliates</a></li>
+                <li class="nav-item"><a class="nav-link text-white" href="#">📌 Tài liệu API <span class="badge bg-success">Mới</span></a></li>
+                <li class="nav-item"><a class="nav-link text-white" href="#">📌 Hỗ trợ</a></li>
+            </ul>
+        </div>
+
+        <!-- Nội dung chính -->
+        <div class="container mt-3">
+            <div class="card p-3 shadow">
+                <h4 class="text-center">Khởi tạo dịch vụ Cloud VPS Việt Nam</h4>
+
+                <!-- Chọn Datacenter -->
+                <h6>Datacenter:</h6>
+                <div class="d-flex gap-3">
+                    <div class="form-check">
+                        <input class="form-check-input" type="radio" name="datacenter" id="vndc1" checked>
+                        <label class="form-check-label btn btn-outline-primary" for="vndc1">
+                            🇻🇳 VNDC I
+                        </label>
+                    </div>
+                    <div class="form-check">
+                        <input class="form-check-input" type="radio" name="datacenter" id="vndc2">
+                        <label class="form-check-label btn btn-outline-primary" for="vndc2">
+                            🇻🇳 VNDC II
+                        </label>
+                    </div>
+                    <div class="form-check">
+                        <input class="form-check-input" type="radio" name="datacenter" id="vndc3">
+                        <label class="form-check-label btn btn-outline-primary" for="vndc3">
+                            🇻🇳 VNDC III
+                        </label>
+                    </div>
+                </div>
+
+                <!-- Thông tin CPU -->
+                <div class="mt-3">
+                    <p><b>🖥 CPU:</b> Amd</p>
+                    <p><b>🖥 Model:</b> AMD EPYC Romer</p>
+                    <p><b>📌 Specifications:</b> Tần số cơ sở 2.85 GHz; Tần số turbo tối đa 3.85 GHz.</p>
+                </div>
+
+                <!-- Cấu hình VPS -->
+                <h6 class="mt-3">Cấu hình:</h6>
+                <div class="list-group">
+                    <label class="list-group-item d-flex justify-content-between align-items-center">
+                        <input type="radio" name="vps_plan" class="form-check-input">
+                        <span>Ram: <b>1 GB</b> | CPU: <b>1 vCPU</b> | SSD: <b>30 GB</b> | Network: <b>150 Mbps</b></span>
+                        <span class="text-danger">129.000 ₫/tháng</span>
+                    </label>
+                    <label class="list-group-item d-flex justify-content-between align-items-center">
+                        <input type="radio" name="vps_plan" class="form-check-input">
+                        <span>Ram: <b>2 GB</b> | CPU: <b>1 vCPU</b> | SSD: <b>30 GB</b> | Network: <b>200 Mbps</b></span>
+                        <span class="text-danger">149.000 ₫/tháng</span>
+                    </label>
+                    <label class="list-group-item d-flex justify-content-between align-items-center">
+                        <input type="radio" name="vps_plan" class="form-check-input">
+                        <span>Ram: <b>2 GB</b> | CPU: <b>2 vCPU</b> | SSD: <b>30 GB</b> | Network: <b>250 Mbps</b></span>
+                        <span class="text-danger">199.000 ₫/tháng</span>
+                    </label>
+                </div>
+
+                <!-- Vị trí và hệ điều hành -->
+                <div class="mt-3 row">
+                    <div class="col-md-6">
+                        <label class="form-label">Vị trí:</label>
+                        <select class="form-select">
+                            <option>VNDC I</option>
+                            <option>VNDC II</option>
+                            <option>VNDC III</option>
+                        </select>
+                    </div>
+                    <div class="col-md-6">
+                        <label class="form-label">Hệ điều hành:</label>
+                        <input type="text" class="form-control" placeholder="Chọn hệ điều hành">
+                    </div>
+                </div>
+                 <div class="mt-3 row">
+                    <div class="col-md-6">
+                        <label class="form-label">Số lượng</label>
+                       <input type="text" class="form-control" placeholder="Chọn số lượng">
+                    </div>
+                    <div class="col-md-6">
+                        <label class="form-label">Mã giảm giá</label>
+                        <input type="text" class="form-control" placeholder="Nhập mã giảm giá">
+                    </div>
+                </div>
+                 <div class="row mt-3">
+        <div class="col-md-6">
+            <input type="checkbox" id="exportTxt">
+            <label for="exportTxt">Xuất ra file .txt sau khi khởi tạo</label>
+        </div>
+        <div class="col-md-6">
+            <input type="checkbox" id="agreePolicy">
+            <label for="agreePolicy">Tôi đã đọc và đồng ý với <a href="#" class="text-primary">Chính sách sử dụng</a> dịch vụ</label>
+        </div>
+    </div>
+
+    <!-- Thành tiền và nút thanh toán -->
+    <div class="mt-3 d-flex justify-content-between align-items-center">
+        <h5>Thành tiền: <span class="text-danger fw-bold">0 ₫</span></h5>
+        <button class="btn btn-primary">Thanh toán</button>
+    </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>

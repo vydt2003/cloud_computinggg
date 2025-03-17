@@ -1,0 +1,27 @@
+.sidebar {
+    position: absolute;
+    top: 56px; /* Chiều cao navbar */
+    left: 0;
+    height: 100vh; /* Full chiều cao màn hình */
+    width: 250px; /* Độ rộng sidebar */
+    background-color: #111;
+    overflow-y: auto;
+}
+
+.container {
+    margin-left: 260px;
+}
+
+.card {
+    border: 2px solid #007bff;
+    border-radius: 10px;
+}
+
+.form-check-input:checked + .form-check-label {
+    background-color: #007bff;
+    color: white;
+}
+
+.list-group-item {
+    cursor: pointer;
+}
